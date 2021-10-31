@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bs-primary: #0d6efd;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-dark: #16181a;
+    --bs-dark-extra: #121314;
+  }
+body{
+    color: var(--bs-white);
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 30%;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 1em auto;
+    /* border: 2px solid green; */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(34, 34, 34);
+    border-radius: 4px;
+}
+.sec1{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bs-dark-extra);
+    /* border: 1px solid green; */
+}
+.logo{
+    width: 18%;
+    margin: 0 auto;
+    /* border: 2px solid green; */
+}
+.signup{
+    width: 80%;
+    margin: 1em auto;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid pink; */
+}
+.signup > input{
+    width: 100%;
+    margin: 1em auto;
+}
+.signup input{
+    background: inherit;
+    border: 1px solid var(--bs-gray);
+    color: inherit;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1.04em;
+}
+.signup select,option{
+    background: inherit;
+    color: var(--bs-white);
+    font-size: 1.05em;
+    padding: 1em;
+    border-radius: 5px;
+    width: 100%;
+    margin: 1em 0;
+}
+.btn{
+    padding: 1.2em ;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.btn-blue{
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    border: none;
+}
+#continue{
+    width: 100%;
+    align-self: center;
+    transition: transform 100ms ease-in-out;
+}
+#continue:active{
+    transform: scale(0.98);
+}
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name > *{
+    width: 48%;
+}
+.container a{
+    color: var(--bs-white);
+
+}
+#l1{
+    visibility: hidden;
+    align-self:flex-start;
+    margin: 0 0.2em;
+}
+
+@media (max-width:600px) {
+    .container{
+        min-width: 300px;
+    }
+}
+
+/* Login */
+
+.login{
+    width: 80%;
+    margin: 1em auto;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid pink; */
+}
+.login > input{
+    width: 100%;
+    margin: 1em auto;
+}
+.login input{
+    background: inherit;
+    border: 1px solid var(--bs-gray);
+    color: inherit;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1.04em;
+}
+.login select,option{
+    background: inherit;
+    color: var(--bs-white);
+    font-size: 1.05em;
+    padding: 1em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login > div{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 1em auto;
+}
+.other-options{
+    text-align: center;
+}
+.other-options >*{
+    margin: 1em 0;
+}

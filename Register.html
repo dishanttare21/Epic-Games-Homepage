@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="custom css/register.css">
+</head>
+
+<body>
+    <section class="sec1 bg-dark">
+        <div class="container">
+            <img src="images/epic-games-logo.svg" alt="Logo" class="logo" id="logo">
+            <h2>Sign Up</h2>
+            <form class="signup">
+                <select name="country" id="country" required>
+                    <option value="India">India</option>
+                    <option value="US">US</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                </select>
+                <br>
+                <div class="name">
+                    <input type="text" placeholder="First Name" autocomplete="off" required />
+                    <input type="text" placeholder="Last Name" autocomplete="off" required />
+                </div>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" required>
+                <label for="email" id="l1"></label>
+                <input type="password" placeholder="Password" autocomplete="off" required>
+                <br>
+                <button type="button" class="btn btn-blue" id="continue" onclick="formValidation()">Continue</button>
+            </form>
+            <a href="">Privacy Policy</a>
+        </div>
+    </section>
+    <script src="custom js/register.js"></script>
+</body>
+
+</html>
